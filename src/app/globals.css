@@ -16,8 +16,9 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(160deg, #fff8ee 0%, #ffe9d6 55%, #ffdcc2 100%);
+  background-attachment: fixed;
+  font-family: "Pretendard", Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {

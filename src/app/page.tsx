@@ -2,20 +2,20 @@ import ProfileHeader from "@/components/ProfileHeader";
 import LinkCard from "@/components/LinkCard";
 
 const links = [
-  { label: "GitHub", href: "https://github.com/" },
-  { label: "LinkedIn", href: "https://linkedin.com/" },
-  { label: "Blog", href: "https://example.com/" },
+  { label: "🐙 GitHub", href: "https://github.com/jhmunlgecom" },
+  { label: "✍️ 블로그", href: "https://github.com/jhmunlgecom" },
+  { label: "📧 이메일", href: "mailto:lge.jh.mun@gmail.com" },
 ];
 
 export default function Home() {
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-sm flex-col items-center gap-8 px-4 py-16">
+    <main className="mx-auto flex min-h-screen w-full max-w-sm flex-col items-center gap-10 px-6 py-20 sm:px-8">
       <ProfileHeader
-        name="김클로"
-        bio="세계 최강 바이브코더"
-        avatarInitial="김"
+        name="김개발"
+        bio="풀스택 개발자 | 요즘에는 AI 개발에 관심이 많아요"
+        avatarSrc="/profile.jpg"
       />
-      <div className="flex w-full flex-col gap-6">
+      <div className="flex w-full flex-col gap-4">
         {links.map((link) => (
           <LinkCard key={link.label} label={link.label} href={link.href} />
         ))}
